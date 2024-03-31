@@ -1,0 +1,31 @@
+<!-- <ul *ngFor="let product of productlist">
+    <li>{{product.id}}</li>
+    <li>{{product.ProductName}}</li>
+</ul> -->
+
+<div class="container">
+    <div class="row d-flex justify-content-center ">
+        <h1>DeltaWare Products</h1>
+        <p class="mb-4">(fetch data Using service,Http and json)</p>
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+
+                    <th scope="col">Product Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let value of ListProduct">
+                    <td>{{value.id}}</td>
+                    <td>{{value.Name}}</td>
+                    <td>{{value.info}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
